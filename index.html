@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankit Shaw - Portfolio</title>
+
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Ankit Shaw" width="80" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Ankit Shaw">Ankit Shaw</h1>
+            <p class="title">React Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:ankitshaw.dev@gmail.com" class="contact-link">ankitshaw6933@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+91935960743" class="contact-link">+91 6291219530</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="2004-03-20">20 March, 2004</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Kolkata, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/AnkitShaw-100" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/ankit-shaw-884b0728a/" class="social-link" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://twitter.com/AnkitShaw750" class="social-link" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+            <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+            <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
+            <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="about">
+          <header><h2 class="h2 article-title">About me</h2></header>
+          <section class="about-text">
+            <p>
+              I’m a self-taught React Developer passionate about creating dynamic and intuitive user interfaces. I enjoy building modern, responsive web apps using React and Tailwind CSS. My journey began with mastering Java fundamentals and Data Structures & Algorithms, and now I’m venturing into backend development using Firebase and Node.js.
+            </p>
+            <p>
+              I love solving problems, turning ideas into real-world applications, and continuously improving my skills through building projects and exploring new technologies.
+            </p>
+          </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">What I Know</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Frontend technologies</h4>
+                  <div class="skills-list">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Bootstrap</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend technologies</h4>
+                  <div class="skills-list">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Firebase</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="resume" data-page="resume">
+          <header><h2 class="h2 article-title">Resume</h2></header>
+          
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Bachelor of Information Technology</h4>
+                <span>2023 — Present</span>
+                <p class="timeline-text">Pursuing B.tech in IT from IEM, Kolkata.</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+            
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Self-taught Developer</h4>
+                <span>2023 — Present</span>
+                <p class="timeline-text">Learning and building projects with React, Node.js, and modern web technologies.</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Download my Resume</h3>
+            <ul class="skills-list content-card">
+            // Resume
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="projects">
+          <header><h2 class="h2 article-title">Projects</h2></header>
+          
+                    <section class="projects">
+            <div class="project-carousel">
+              <ul class="project-list">
+
+                <li class="project-item" data-filter-item data-category="web development">
+                  <a href="#" class="project-link">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/project-1.png" alt="Travel Website UI" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Travel Website UI</h3>
+                    <p class="project-category">Next.js</p>
+                    <p class="project-description">A sleek and modern travel landing page built with Next.js, featuring responsive layout and smooth navigation for better user engagement.</p>
+                  </a>
+                  <div class="project-buttons">
+                    <a href="https://github.com/AnkitShaw-100/Travel-website" target="_blank" class="btn btn-github">GitHub</a>
+                  </div>
+                </li>
+
+                <li class="project-item" data-filter-item data-category="web development">
+                  <a href="#" class="project-link">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/project-2.png" alt="Food Delivery UI" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Food Delivery UI</h3>
+                    <p class="project-category">Next.js</p>
+                    <p class="project-description">A clean and colorful UI for a food delivery app made with Next.js. Includes restaurant listing, product cards, and responsive layout.</p>
+                  </a>
+                  <div class="project-buttons">
+                    <a href="https://github.com/AnkitShaw-100/09_Food-Delivery" target="_blank" class="btn btn-github">GitHub</a>
+                  </div>
+                </li>
+
+                <li class="project-item" data-filter-item data-category="web development">
+                  <a href="#" class="project-link">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/project-3.png" alt="Real Estate Portal" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Real Estate Portal</h3>
+                    <p class="project-category">Full Stack MERN</p>
+                    <p class="project-description">A complete MERN stack project for property listing and user interaction with authentication, filters, and chat support.</p>
+                  </a>
+                  <div class="project-buttons">
+                    <a href="https://github.com/AnkitShaw-100/Real-Estate" target="_blank" class="btn btn-github">GitHub</a>
+                  </div>
+                </li>
+
+                <li class="project-item" data-filter-item data-category="web development">
+                  <a href="#" class="project-link">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/project-4.png" alt="Shishu Card" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Shishu Card</h3>
+                    <p class="project-category">Full Stack Firebase</p>
+                    <p class="project-description">A Firebase-powered web app that allows parents to track their child's vaccination, documents, and educational growth in one place.</p>
+                  </a>
+                  <div class="project-buttons">
+                    <a href="https://github.com/AnkitShaw-100/H4B" target="_blank" class="btn btn-github">GitHub</a>
+                  </div>
+                </li>
+
+                <li class="project-item" data-filter-item data-category="web development">
+                  <a href="#" class="project-link">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/project-4.png" alt="E-Commerce Platform" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-category">React & Node.js</p>
+                    <p class="project-description">A full-featured e-commerce platform with user authentication, product management, shopping cart, and payment integration.</p>
+                  </a>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yourusername/ecommerce-platform" target="_blank" class="btn btn-github">GitHub</a>
+                  </div>
+                </li>
+
+                <li class="project-item" data-filter-item data-category="web development">
+                  <a href="#" class="project-link">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/project-5.png" alt="Task Management App" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Task Management App</h3>
+                    <p class="project-category">Vue.js & Firebase</p>
+                    <p class="project-description">A collaborative task management application built with Vue.js and Firebase, featuring real-time updates and team collaboration tools.</p>
+                  </a>
+                  <div class="project-buttons">
+                    <a href="https://github.com/yourusername/task-manager" target="_blank" class="btn btn-github">GitHub</a>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </section>
+
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header><h2 class="h2 article-title">Contact</h2></header>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Get In Touch</h3>
+            <p class="contact-description">
+              I'm always open to discussing new opportunities, creative projects, or just having a friendly chat about technology. 
+              Feel free to reach out!
+            </p>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              </div>
+
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
