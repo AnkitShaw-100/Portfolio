@@ -99,12 +99,31 @@ class ProjectCarousel {
     this.indicators = null;
 
     this.currentPage = 0;
-    this.itemsPerPage = 2;
+    this.itemsPerPage = this.getItemsPerPage();
     this.totalPages = 0;
 
     if (this.projectItems.length > 0) {
       this.init();
+      this.bindResizeEvent();
     }
+  }
+
+  getItemsPerPage() {
+    // Show 1 item on mobile (< 768px), 2 items on larger screens
+    return window.innerWidth < 768 ? 1 : 2;
+  }
+
+  bindResizeEvent() {
+    window.addEventListener('resize', () => {
+      const newItemsPerPage = this.getItemsPerPage();
+      if (newItemsPerPage !== this.itemsPerPage) {
+        this.itemsPerPage = newItemsPerPage;
+        this.currentPage = 0; // Reset to first page
+        this.calculatePages();
+        this.createIndicators(); // Recreate indicators with new page count
+        this.showCurrentPage();
+      }
+    });
   }
 
   init() {
@@ -149,6 +168,12 @@ class ProjectCarousel {
   }
 
   createIndicators() {
+    // Remove existing indicators if they exist
+    const existingIndicators = document.querySelector(".carousel-indicators");
+    if (existingIndicators) {
+      existingIndicators.remove();
+    }
+
     if (this.totalPages <= 1) return;
 
     const indicatorContainer = document.createElement("div");
@@ -166,10 +191,12 @@ class ProjectCarousel {
 
     // Insert indicators after navigation
     const navContainer = document.querySelector(".carousel-nav");
-    navContainer.parentNode.insertBefore(
-      indicatorContainer,
-      navContainer.nextSibling
-    );
+    if (navContainer) {
+      navContainer.parentNode.insertBefore(
+        indicatorContainer,
+        navContainer.nextSibling
+      );
+    }
   }
 
   bindEvents() {
