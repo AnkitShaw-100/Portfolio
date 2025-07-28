@@ -1224,6 +1224,28 @@ textarea.form-input::-webkit-resizer {
     min-height: 44px;
     touch-action: manipulation;
   }
+
+  /* Resume download section mobile styles */
+  .resume-download-section {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .resume-description {
+    font-size: var(--fs-7);
+    margin-bottom: 15px;
+  }
+
+  .resume-download-btn {
+    padding: 12px 25px;
+    font-size: var(--fs-7);
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  .resume-download-btn ion-icon {
+    font-size: 16px;
+  }
 }
 
 /* Responsive for devices larger than 450px */
@@ -1749,4 +1771,83 @@ textarea.form-input::-webkit-resizer {
 .btn ion-icon {
   font-size: 14px;
   --ionicon-stroke-width: 35px;
+}
+
+/*-----------------------------------*\
+  #RESUME DOWNLOAD SECTION
+\*-----------------------------------*/
+
+.resume-download-section {
+  text-align: center;
+  padding: 20px;
+  background: var(--border-gradient-onyx);
+  border-radius: 14px;
+  margin-top: 15px;
+}
+
+.resume-download-section::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--bg-gradient-jet);
+  z-index: -1;
+}
+
+.resume-description {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.resume-download-btn {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-1);
+  z-index: 1;
+  text-decoration: none;
+}
+
+.resume-download-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.resume-download-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-4);
+  color: var(--smoky-black);
+}
+
+.resume-download-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.resume-download-btn ion-icon {
+  font-size: 18px;
+  --ionicon-stroke-width: 35px;
+}
+
+.resume-download-btn span {
+  font-weight: var(--fw-500);
 }
