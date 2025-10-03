@@ -61,6 +61,146 @@
   filter: drop-shadow(0 0 12px rgba(145, 94, 255, 0.5));
 }
 
+/* Tech Section Styles */
+.tech-ball-container {
+  transition: transform 0.3s ease;
+}
+
+.tech-ball-container:hover {
+  transform: scale(1.1);
+}
+
+/* Works Section - Roadway Styles */
+.roadway-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.roadway-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    #915eff 20%, 
+    #915eff 80%, 
+    transparent 100%
+  );
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.roadway-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0px,
+    transparent 20px,
+    #ffffff 20px,
+    #ffffff 40px,
+    transparent 40px,
+    transparent 60px
+  );
+  transform: translateY(-50%);
+  animation: roadwayMove 3s linear infinite;
+}
+
+@keyframes roadwayMove {
+  0% { transform: translateY(-50%) translateX(0); }
+  100% { transform: translateY(-50%) translateX(60px); }
+}
+
+.project-card-container {
+  position: relative;
+  z-index: 2;
+}
+
+.project-card-container::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #915eff;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px rgba(145, 94, 255, 0.6);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: translateX(-50%) scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+.card-img_hover {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.project-card-container:hover .card-img_hover {
+  opacity: 1;
+}
+
+/* Text gradients for project tags */
+.blue-text-gradient {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.green-text-gradient {
+  background: linear-gradient(90deg, #059669, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.pink-text-gradient {
+  background: linear-gradient(90deg, #ec4899, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Contact Section Styles */
+.black-100 {
+  background-color: #100d25;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #915eff;
+  outline-offset: 2px;
+}
+
+.social-link {
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(145, 94, 255, 0.4);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .navbar-gradient {
