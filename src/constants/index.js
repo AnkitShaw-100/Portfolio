@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -42,20 +38,12 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Full Stack Developer",
+    icon: "https://cdn-icons-png.flaticon.com/512/1336/1336494.png", // Full stack development icon
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
+    title: "Web 3 Developer",
+    icon: "https://cdn-icons-png.flaticon.com/512/6001/6001527.png", // Blockchain/Web3 icon
   },
 ];
 
